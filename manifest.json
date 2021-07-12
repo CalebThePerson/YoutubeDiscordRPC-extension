@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "YoutubeRPCStatus",
+  "version": "1.0.0",
+
+  "descritption": "Connects youtube to discord, changing your status to your youtube video",
+  "icons": {
+    "16": "icons/16x16.png",
+    "48": "icons/48x48.png",
+    "128": "icons/128x128.png"
+  },
+
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+
+  "background.service_worker": {
+    "scripts": ["background.js"]
+  },
+
+  "permissions": ["tabs", "cookies", "desktopCapture", "tabCapture", "pageCapture"]
+
+}
