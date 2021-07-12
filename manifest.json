@@ -18,6 +18,10 @@
     "scripts": ["background.js"]
   },
 
-  "permissions": ["tabs", "cookies", "desktopCapture", "tabCapture", "pageCapture"]
+  "permissions": ["tabs", "cookies", "desktopCapture", "tabCapture", "pageCapture"],
+
+  Allowing bootstrap as an external file
+  "content_security_policy": "script-src 'self' https://maxcdn.bootstrapcdn.com; object-src 'self';"
+
 
 }
